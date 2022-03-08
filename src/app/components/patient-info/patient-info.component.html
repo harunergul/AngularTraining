@@ -1,0 +1,11 @@
+<div class="card" style="width: 18rem">
+  <div class="card-body">
+    <h5 class="card-title">{{ patient?.name }}</h5>
+    <p class="card-text">Username: {{ patient?.username }}</p>
+    <p class="card-text">Email: {{ patient?.email }}</p>
+    <p class="card-text">Completed Zikir: {{ completedZikir }}</p>
+  </div>
+  <app-zikirmatik
+    (zikirCompletedEvent)="zikirCompleted($event)"
+  ></app-zikirmatik>
+</div>
